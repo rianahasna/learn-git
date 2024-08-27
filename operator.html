@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Web Page</title>
+  </head>
+  <body>
+    <h2>Contoh Penggunaan Operator dalam JavaScript</h2>
+    <p id="arithmetic"></p>
+    <p id="comparison"></p>
+    <p id="logical"></p>
+    <p id="assignment"></p>
+
+    <script>
+      // Operator Aritmatika
+      let a = 10;
+      let b = 5;
+      let arithmeticResult = `
+            Addition: ${a + b}<br>
+            Subtraction: ${a - b}<br>
+            Multiplication: ${a * b}<br>
+            Division: ${a / b}<br>
+            Modulus: ${a % b}<br>
+            Exponentiation: ${a ** b}<br>
+            Increment: ${++a}<br>
+            Decrement: ${--b}
+        `;
+      document.getElementById("arithmetic").innerHTML = arithmeticResult;
+
+      // Operator Perbandingan
+      let x = 10;
+      let y = 5;
+      let comparisonResult = `
+            Equal: ${x == y}<br>
+            Not equal: ${x != y}<br>
+            Strict equal: ${x === y}<br>
+            Strict not equal: ${x !== y}<br>
+            Greater than: ${x > y}<br>
+            Less than: ${x < y}<br>
+            Greater than or equal: ${x >= y}<br>
+            Less than or equal: ${x <= y}
+        `;
+      document.getElementById("comparison").innerHTML = comparisonResult;
+
+      // Operator Logika
+      let p = true;
+      let q = false;
+      let logicalResult = `
+            AND: ${p && q}<br>
+            OR: ${p || q}<br>
+            NOT: ${!p}<br>
+            Ternary: ${p ? "True" : "False"}
+        `;
+      document.getElementById("logical").innerHTML = logicalResult;
+
+      // Operator Assignment
+      let m = 10;
+      m += 5; // m = m + 5
+      m -= 3; // m = m - 3
+      m *= 2; // m = m * 2
+      m /= 4; // m = m / 4
+      m %= 3; // m = m % 3
+      let assignmentResult = `Final value of m: ${m}`;
+      document.getElementById("assignment").innerHTML = assignmentResult;
+    </script>
+  </body>
+</html>
